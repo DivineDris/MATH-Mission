@@ -26,13 +26,19 @@ public:
 
 	//functions to calculate coordinates
 	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
-	float Addition(float& A, float& B);
+	float Addition(const float& ValueA, const float& ValueB);
 	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
-	float Subtraction(float& A, float& B);
+	float Subtraction(const float& ValueA, const float& ValueB);
 	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
-	float Division(float& A, float& B);
+	float Division(const float& ValueA, const float& ValueB);
 	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
-	float Multiplication(float& A, float& B);
+	float Multiplication(const float& ValueA, const float& ValueB);
+	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
+	float RaiseToPower(const float& ValueA, const float& PowerValue);
+	UFUNCTION(BlueprintCallable, Category = "Trajectory calculation")
+	float SquareRoot(const float& ValueA);
+
+
 
 		
 };

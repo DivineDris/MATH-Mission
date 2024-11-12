@@ -33,23 +33,34 @@ void UTrajectoryCalculator::TickComponent(float DeltaTime, ELevelTick TickType, 
 	// ...
 }
 
-float UTrajectoryCalculator::Addition(float& A, float& B)
+float UTrajectoryCalculator::Addition(const float& ValueA, const float& ValueB)
 {
-	return A + B;
+	return ValueA + ValueB;
 }
 
-float UTrajectoryCalculator::Subtraction(float& A, float& B)
+float UTrajectoryCalculator::Subtraction(const float& ValueA, const float& ValueB)
 {
-	return A - B;
+	return ValueA - ValueB;
 }
 
-float UTrajectoryCalculator::Division(float& A, float& B)
+float UTrajectoryCalculator::Division(const float& ValueA, const float& ValueB)
 {
-	return A * B;
+	return ValueA * ValueB;
 }
 
-float UTrajectoryCalculator::Multiplication(float& A, float& B)
+float UTrajectoryCalculator::Multiplication(const float& ValueA, const float& ValueB)
 {
-	return A / B;
+	return ValueA / ValueB;
 }
+
+float UTrajectoryCalculator::RaiseToPower(const float& ValueA, const float& PowerValue)
+{
+	return pow(ValueA, PowerValue);
+}
+
+float UTrajectoryCalculator::SquareRoot(const float& ValueA)
+{
+	return sqrt(ValueA);
+}
+
 
